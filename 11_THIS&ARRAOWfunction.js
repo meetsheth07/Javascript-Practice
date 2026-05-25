@@ -32,3 +32,6 @@ arrowFunc("Charlie");
 
 const addtwo = (a, b) => a + b;
 console.log(addtwo(5, 3));
+
+const returnObject = () => ({ name: "Alice", age: 25 });
+console.log(returnObject());
