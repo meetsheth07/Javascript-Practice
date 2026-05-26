@@ -66,3 +66,5 @@ let objArr = [
 objArr.forEach((obj)=>{
     console.log(`Name: ${obj.name}, Age: ${obj.age}`);
 })
+
+//forEach Loop never return anything 
