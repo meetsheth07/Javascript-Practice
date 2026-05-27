@@ -29,13 +29,3 @@ function testVarScope() {
     }
     console.log(y); // Output: 20, this y refers to the same y defined in the function scope, which was overwritten by the inner var declaration
 }   
-testVarScope();
-function testLetScope() {
-    let z = 10;
-    return function() {
-        let z = 20; 
-        console.log(z); // Output: 20, this z is different from the outer z due to block scope of let
-    }   
-}   
-const innerFunction = testLetScope();
-innerFunction(); // Output: 20, this z refers to the inner z defined in the inner function scope, while the outer z remains unchanged at 10
